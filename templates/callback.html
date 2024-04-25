@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Response</title>
+</head>
+<body>
+    <h1>Callback Response</h1>
+
+    <div id="token_info">
+        <h2>Token Info</h2>
+        <table border="1">
+            <tr>
+                <th>Description</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Access Token</td>
+                <td><div id="access_token">{{ token_info.access_token }}</div></td>
+            </tr>
+            <tr>
+                <td>Expires In</td>
+                <td><div id="expires_in">{{ token_info.expires_in }}</div></td>
+            </tr>
+            <tr>
+                <td>Refresh Token</td>
+                <td><div id="refresh_token">{{ token_info.refresh_token }}</div></td>
+            </tr>
+            <tr>
+                <td>Token Type</td>
+                <td><div id="token_type">{{ token_info.token_type }}</div></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="profile_info">
+        <h2>Profile Info</h2>
+        <table border="1">
+            <tr>
+                <th>Description</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td><div id="message">{{ profile_info.message }}</div></td>
+            </tr>
+            <tr>
+                <td>Result Code</td>
+                <td><div id="result_code">{{ profile_info.resultcode }}</div></td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td><div id="profile_id">{{ profile_info.response.id }}</div></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

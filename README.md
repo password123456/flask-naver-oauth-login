@@ -41,7 +41,7 @@ a simple example app for implementing login functionality via Naver OAuth in a F
 ```
 
 ## Usage
-- After running the app, navigate to http://127.0.0.1:8080/login in your web browser.
+- After running the app, navigate to http://127.0.0.1:8080/naver in your web browser.
 - Click on the Naver login button to log in.
 - Once logged in, the access token will be displayed.
 

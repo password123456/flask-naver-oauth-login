@@ -9,6 +9,15 @@
 
 a simple example app for implementing login functionality via Naver OAuth in a Flask application. Users can log in with their Naver accounts and obtain an access token through this app.
 
+네이버 OAuth를 통해 로그인 기능을 구현하는 간단한 예제 앱입니다. 
+이 앱을 통해 사용자는 네이버 계정으로 로그인하여 엑세스 토큰을 받아올 수 있습니다.
+
+## Configuration
+1) Register your application and obtain OAuth client ID and secret key from Naver Developer Center.
+2) Open the app.py file and input the obtained values into the 'client_id' and 'client_secret' variables.
+
+- 네이버 개발자 센터에서 애플리케이션을 등록하고 OAuth 클라이언트 ID 및 시크릿 키를 발급받습니다.
+- app.py 파일의 'client_id' 와 'client_secret' 변수에 발급받은 값을 입력합니다.
 
 ## Step 1: Clone this repository:
 ```bash
@@ -31,7 +40,7 @@ a simple example app for implementing login functionality via Naver OAuth in a F
 # python3 app.py
 ```
 
-# Usage
+## Usage
 - After running the app, navigate to http://127.0.0.1:8080/login in your web browser.
 - Click on the Naver login button to log in.
 - Once logged in, the access token will be displayed.
